@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finance Dashboard</h1>
+
+        <!--Summary Cards-->
+        <div class="summary">
+            <div class="card">
+                <h3>Balance</h3>
+                <p id="balance">R200.00</p>
+            </div>
+            <div class="card income">
+                <h3>Income</h3>
+                <p id="income">R400.00</p>
+            </div>
+            <div class="card expense">
+                <h3>Expenses</h3>
+                <p id="expenses">R200.00</p>
+            </div>
+        </div>
+
+        <!--Transaction Form-->
+        <form id="transaction form">
+            <input type="text" id="description"placeholder="Description" required />
+            <input type="number" id="amount" placeholder="Amount" required />
+
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <button type="submit">Add Transaction</button>
+        </form>
+
+        <!--Transaction List-->
+        <h2>Transactions</h2>
+        <ul id="transaction-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
